@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>chatbot tuling</title>
+	{% load static %}
+	<script type="text/javascript" src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+</head>
+<body>
+	<div class="main">
+		<div class="outputcontainer"></div>
+		<div class="inputcontainer">
+			<textarea class="input"></textarea>
+		</div>
+	</div>
+</body>
+<style type="text/css">
+	.main {
+		width: 500px;
+		position: absolute;
+		left: 50%;
+		margin-left: -250px;
+	}
+	.outputcontainer {
+		padding-top:10px;
+		padding-left:10px;
+		border: 1px solid black;
+		height: 500px;
+		margin-bottom: 10px;
+		overflow: scroll;
+	}
+	.hiscontainer {
+		position:relative;
+
+	}
+	.inputcontainer {
+		width: 500px;
+	}
+	.input {
+		padding-left:10px;
+		width:484px;
+		height:100px;
+	}
+</style>
+<script type="text/javascript">
+
+</script>
+<script type="text/javascript" src="{% static 'js/index.js' %}"></script>
+</html>
