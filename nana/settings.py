@@ -25,7 +25,7 @@ SECRET_KEY = 'ig2)!x(+etmx2^k-el(az=mj2qrzy09i5%ay9l54tor2#+bha%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['193.112.12.68']
 
 
 # Application definition

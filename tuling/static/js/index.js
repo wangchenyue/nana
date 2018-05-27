@@ -8,7 +8,7 @@ var appendhis=function(name, content){
 
 var sendmsg=function(data){
 	$.ajax({
-		url: "//localhost:8000/tuling/ajaxindex",
+		url: "/tuling/ajaxindex",
 		method: 'get',
 		data: data,
         crossDomain: true,
