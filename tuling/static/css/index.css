@@ -1,0 +1,63 @@
+/*-----------------------base------------------------*/
+html, body {
+	height:100%;
+	padding: 0;
+	margin: 0;
+}
+div {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	width:100%;
+}
+
+/*-----------------------left------------------------*/
+.mainleft{
+	display: inline-block;
+	position: absolute;
+	width:240px;
+	height:100%;
+	border: 1px solid black;
+	color: white;
+	padding-left: 20px;
+	background-color: #212429;
+}
+.mainleft .left-title {
+	background-color: #22252a;
+	display: block;
+}
+
+/*-----------------------main------------------------*/
+.main {
+	width:100%;
+	float: right;
+	right: 0;
+	position:relative;
+	display: inline-block;
+	height: 100%;
+	border: 1px solid black;
+}
+.maincontent {
+	margin-left:240px;
+	height:100%;
+	background-color: wheat;
+}
+.outputcontainer {
+	padding-top:10px;
+	padding-left:10px;
+	border: 1px solid black;
+	margin-bottom: 10px;
+	overflow: scroll;
+}
+.hiscontainer {
+	position:relative;
+}
+.inputcontainer {
+	width: 500px;
+}
+.input {
+	padding-left:10px;
+	width:484px;
+}

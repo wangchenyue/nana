@@ -3,43 +3,30 @@
 <head>
 	<title>chatbot tuling</title>
 	{% load static %}
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
 	<script type="text/javascript" src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
 </head>
 <body>
+	<div class="mainleft">
+		<span class="left-title">ROBOTS</span>
+		<ul class="robots-ul">
+			<li class="robots-li">nana</li>
+		</ul>
+		<div class="footer">
+			<a class="footer-link" href="">ABOUT</a>
+			<a class="footer-link" href="">HELP</a>
+			<a class="footer-link" href="">CONTACT</a>
+		</div>
+	</div>
 	<div class="main">
-		<div class="outputcontainer"></div>
-		<div class="inputcontainer">
-			<textarea class="input"></textarea>
+		<div class="maincontent">
+			
 		</div>
 	</div>
 </body>
 <style type="text/css">
-	.main {
-		width: 500px;
-		position: absolute;
-		left: 50%;
-		margin-left: -250px;
-	}
-	.outputcontainer {
-		padding-top:10px;
-		padding-left:10px;
-		border: 1px solid black;
-		height: 500px;
-		margin-bottom: 10px;
-		overflow: scroll;
-	}
-	.hiscontainer {
-		position:relative;
-
-	}
-	.inputcontainer {
-		width: 500px;
-	}
-	.input {
-		padding-left:10px;
-		width:484px;
-		height:100px;
-	}
+	
 </style>
 <script type="text/javascript">
 
