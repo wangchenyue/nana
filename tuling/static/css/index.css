@@ -3,8 +3,10 @@ html, body {
 	height:100%;
 	padding: 0;
 	margin: 0;
+	max-height: 100%;
+	overflow: hidden;
 }
-div {
+div,p {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
@@ -17,16 +19,68 @@ body {
 .mainleft{
 	display: inline-block;
 	position: absolute;
-	width:240px;
+	width:280px;
 	height:100%;
-	border: 1px solid black;
-	color: white;
-	padding-left: 20px;
-	background-color: #212429;
+	color: #f5f5f5;
+	background-color: #25292e;
+	z-index: 1;
 }
 .mainleft .left-title {
 	background-color: #22252a;
 	display: block;
+	padding-left: 20px;
+	height:84px;
+	line-height: 84px;
+	font-size: 34px;
+}
+.mainleft .robots-ul {
+	padding-left: 20px;
+	list-style: none;
+	padding-left: 20px;
+	font-size: 16px;
+}
+.mainleft .robots-ul .robots-li {
+	position: relative;
+	height: 30px;
+	line-height: 30px;
+}
+.mainleft .robots-ul .nana {
+
+}
+.mainleft .robots-ul .robots-li .nanaicon {
+	border-radius: 15px;
+	background-image: url('../imgs/nana.jpg');
+	background-size: cover;
+	height:30px;
+	width: 30px;
+	display: inline-block;
+}
+.mainleft .robots-ul .robots-li .nananame {
+	padding-left: 10px;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+}
+.mainleft .footer {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	position:absolute;
+	bottom: 0;
+	left: 20px;
+	width: 240px;
+	text-align: center;
+	border-top: solid #666 1px;
+}
+.mainleft .footer .footer-link{
+	padding-left:10px;
+	padding-right:10px;
+	color: #666;
+	font-size:12px;
+	text-decoration: none;
+	cursor: pointer;
+}
+.mainleft .footer .footer-link:hover{
+	text-decoration: underline;
 }
 
 /*-----------------------main------------------------*/
@@ -37,27 +91,133 @@ body {
 	position:relative;
 	display: inline-block;
 	height: 100%;
-	border: 1px solid black;
 }
 .maincontent {
-	margin-left:240px;
+	margin-left:280px;
 	height:100%;
-	background-color: wheat;
+	background-color: #f1f1f1;
 }
-.outputcontainer {
-	padding-top:10px;
+.main .maincontent .maintop {
+	height:84px;
+	border-bottom: solid #dbdcde 1px;
+	position:relative;
+	background-color: #fff;
+}
+.main .maincontent .maintop .personal-container{
+	height:84px;
+	text-decoration: none;
+	color: #333;
+	display: block;
+	position: absolute;
+	right:10px;
+}
+.main .maincontent .maintop .personal-container .personal-icon {
+	border-radius: 15px;
+	background-image: url('../imgs/wangchenyue.jpg');
+	background-size: cover;
+	height:30px;
+	width: 30px;
+	display: inline-block;
+	margin-top:27px;
+	margin-right:10px;
+	line-height: 30px;
+}
+.main .maincontent .maintop .personal-container .personal-name {
+	display: inline-block;
+	margin-top:27px;
+	height:30px;
+	line-height:30px;
+}
+.main .maincontent .chatregion {
+	width:600px;
+	border-right: 1px solid #dbdcde;
+	height: 100%;
+	background-color: #f7f7f7;
+}
+.main .maincontent .chatregion .output-container {
 	padding-left:10px;
-	border: 1px solid black;
-	margin-bottom: 10px;
+	padding-right: 10px;
+	height:538px;
 	overflow: scroll;
 }
-.hiscontainer {
-	position:relative;
+
+.main .maincontent .chatregion .output-container .output-cell {
+	padding-top:20px;
 }
-.inputcontainer {
-	width: 500px;
+.main .maincontent .chatregion .output-container .output-cell p {
+	text-align: center;
+	font-size: 12px;
+    color: #dbdcde;
+    padding-bottom:5px;
 }
-.input {
-	padding-left:10px;
-	width:484px;
+.main .maincontent .chatregion .output-container .output-cell .me-content {
+	padding: 10px;
+	border-radius: 5px;
+	background-color:#e7f1f6;
 }
+.main .maincontent .chatregion .output-container .output-cell .me-icon {
+	border-radius: 15px;
+	background-image: url('../imgs/wangchenyue.jpg');
+	background-size: cover;
+	height:30px;
+	width: 30px;
+	display: inline-block;
+	margin-top:27px;
+	margin-right:10px;
+	line-height: 30px;
+}
+.main .maincontent .chatregion .output-container .output-cell .nana-content {
+	padding: 10px;
+	border-radius: 5px;
+	background-color:#e7f1f6;
+}
+.main .maincontent .chatregion .output-container .output-cell .nana-icon {
+	border-radius: 15px;
+	background-image: url('../imgs/nana.jpg');
+	background-size: cover;
+	height:30px;
+	width: 30px;
+	display: inline-block;
+	margin-top:27px;
+	margin-right:10px;
+	line-height: 30px;
+}
+.main .maincontent .chatregion .input-container {
+	height: 62px;
+	background-color: #f1f1f1;
+	line-height: 62px;
+	font-size: 16px;
+	position: absolute;
+	bottom: 0;
+	width:600px;
+	border-top:1px solid #dbdcde;
+	border-right: 1px solid #dbdcde;
+}
+.main .maincontent .chatregion .input-container .input {
+	box-sizing: border-box;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 3px;
+	padding:0 10px 0 10px;
+	margin:0 5px 0 20px;
+	border: 1px solid #dbdcde;
+	display: inline-block;
+	width: 485px;
+}
+.main .maincontent .chatregion .input-container .sendbtn {
+	box-sizing: border-box;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 3px;
+	padding: 0 20px 0 20px;
+	margin:0;
+	border: 1px solid #dbdcde;
+	color: white;
+	display: inline-block;
+	background-color: #48a9e3;
+}
+
+
+
+
+
