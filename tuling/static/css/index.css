@@ -144,6 +144,9 @@ body {
 .main .maincontent .chatregion .output-container .output-cell {
 	padding-top:20px;
 }
+.main .maincontent .chatregion .output-container .output-cell.right {
+	text-align: right;
+}
 .main .maincontent .chatregion .output-container .output-cell p {
 	text-align: center;
 	font-size: 12px;
@@ -163,7 +166,7 @@ body {
 	width: 30px;
 	display: inline-block;
 	margin-top:27px;
-	margin-right:10px;
+	margin-left:10px;
 	line-height: 30px;
 }
 .main .maincontent .chatregion .output-container .output-cell .nana-content {

@@ -5,14 +5,21 @@ var appendhis=function(name, content){
 	var mytime=myDate.toLocaleTimeString();
 	console.log(mytime)
 	if('nana'==name){
-		var child='<div class="output-cell"><p><span class="time">'+mytime+'</span></p><span class="nana-icon">&nbsp;</span><span class="nana-content">'+content+'</span></div>';
+		var child='<div class="output-cell left"><p><span class="time">'+mytime+'</span></p><span class="nana-icon">&nbsp;</span><span class="nana-content">'+content+'</span></div>';
 	}
 	else {
-		var child='<div class="output-cell"><p><span class="time">'+mytime+'</span></p><span class="me-content">'+content+'</span><span class="me-icon">&nbsp;</span></div>';
+		var child='<div class="output-cell right"><p><span class="time">'+mytime+'</span></p><span class="me-content">'+content+'</span><span class="me-icon">&nbsp;</span></div>';
 	}
 	$('.output-container').append(child);
 	$('.output-container').scrollTop($('.output-container')[0].scrollHeight);
 }
+
+var heightinit=function(){
+	var height=$('.mainleft').height()-84-62;
+	height+='px';
+	$('.output-container').css('height', height);
+}
+heightinit();
 
 var sendmsg=function(data){
 	$.ajax({
